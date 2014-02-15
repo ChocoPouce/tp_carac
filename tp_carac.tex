@@ -23,14 +23,14 @@
 
 \maketitle
 
-La microscopie électronique est une des techniques importantes de caractérisation d'échantillon. En effet, elle permet d'avoir accès à un grand nombre d'information. Ce TP est une introduction à l'utilisation du MEB, il permet de mesurer l'ampleur des possibilités de ce type de microscopie et de comprendre les raisonnements permettant d'interpréter les clichés obtenus. C'est pour cela que l'on commencera par introduire les différents électrons mis en jeu et leurs détecteurs associés, pour ensuite s'intéresser aux clichés effectués durant la séance et à l'utilisation de photons X dans l'enceinte du MEB pour completer les informations disponibles.
+La microscopie électronique est une des techniques importantes de caractérisation d'échantillon. En effet, elle permet d'avoir accès à un grand nombre d'information. Ce TP est une introduction à l'utilisation du MEB, il permet de mesurer l'ampleur des possibilités de ce type de microscopie et de comprendre les raisonnements permettant d'interpréter les clichés obtenus. C'est pour cela que l'on commencera par introduire les différents électrons mis en jeu et leurs détecteurs associés, pour ensuite s'intéresser aux clichés effectués durant la séance et à l'utilisation de photons X dans l'enceinte du MEB pour compléter les informations disponibles.
 
 
 \section{Rappel des différentes sources électroniques et leur détection}
 
 \subsection{Les différentes sources électroniques du MEB}
 
-Des électrons sont accélérés depuis la cathode vers l'échantillon que l'on souhaite étudier. Du fait de leur énergie cinétique, les électrons pénètrent dans la matière de l'échantillon en formant ce que l'on appelle une poire d'interaction (figure \ref{fig:poire_int}).
+Des électrons sont accélérés depuis la cathode vers l'échantillon que l'on souhaite étudier. Du fait de leur énergie cinétique, les électrons pénètrent dans la matière de l'échantillon en formant ce que l'on appelle une poire d'intéraction (figure \ref{fig:poire_int}).
 
 \begin{figure}
 \centering
@@ -81,7 +81,7 @@ La détection des électrons rétro-diffusés se fait à l'aide du détecteur d'
 On polarise le collecteur en tension à $+200$ Volts, ce qui a pour rôle d'attirer les électrons secondaires. 
 Cette grille joue aussi le rôle de "cage de Faraday", ce qui permet de ne pas attirer des électrons du faisceau incident. 
 Les électrons secondaires possédant une faible énergie, ils sont ainsi sélectionnés par rapport aux électrons rétro-diffusés.
-Il reste néanmoins les électrons rétro-diffusés avec l'angle solide correspondant à la direction du détecteur d'\ett dont l'on ne peut pas se passer.
+Il reste néanmoins les électrons rétro-diffusés avec l'angle solide correspondant à la direction du détecteur d'\ett dont l'on ne peut pas s'affranchir.
 
 Une fois les électrons collectés, ils sont accélérés vers un scintillateur polarisé à $10$kV qui les "transforme" en photons.
 Ces photons sont ensuite conduits vers un photo-multiplicateur qui a pour but d'amplifier le signal final obtenu.
@@ -100,9 +100,7 @@ L'observation de ce premier échantillon, une éponge de nickel, va nous permett
 
 Utilisant comme technique d'imagerie intiale les électrons secondaires recueillis par le détecteur d'\ett,
 on accède à une première observation de l'échantillon présentée figure \ref{fig:ni_es}. Comme déjà évoqué,
-cette technique a l'avantage d'offrir une grande profondeur de champ à l'image obtenue. Cette première
-technique d'imagerie permet un contraste de profondeur de champ et donc de visualiser spatialement la forme
-de l'échantillon.
+cette technique a l'avantage d'offrir une grande profondeur de champ à l'image obtenue contrairement aux microscopies optiques. Cette première technique d'imagerie permet un contraste de profondeur de champ et donc de visualiser spatialement la forme de l'échantillon.
 
 \begin{figure}
 \centering
@@ -180,7 +178,7 @@ du matériau et l'observation de ce cliché nous permet de penser que la structu
 \end{figure}
 
 Afin de déterminer si les pyramides sont en bas-relief ou non on utilise un autre cliché. La figure \ref{fig:si_er_rasant} présente
-un cliché réalisé à l'aide du détecteur de \ett mais en colelctant les électrons rétrodiffusés. Les électrons utilisés étant rasants,
+un cliché réalisé à l'aide du détecteur de \ett mais en collectant les électrons rétrodiffusés. Les électrons utilisés étant rasants,
 on observe des effets d'ombre et de lumière. Par exemple une poussière en haut à droite du cliché projette son ombre vers le bas.
 On en déduit que l'éclairage provient du haut du cliché. Ainsi il est maintenant possible de se prononcer sur l'enfoncement des pyramides.
 Les faces éclairées sont celles situées en bas, ce qui veut dire que les pyramides sont en bas-relief.
@@ -192,6 +190,20 @@ Les faces éclairées sont celles situées en bas, ce qui veut dire que les pyra
 \label{fig:si_er_rasant}
 \end{figure}
 
+En utilisant le détecteur à semiconducteur en mode $A+B$, on observe sur la figure \ref{fig:si_er_apb} les contrastes de compositions et en l'occurence qu'il y a deux types de poussières. Mais le plus important pour la détermination de la structure cristallographique est le mode $A-B$. En effet, cela permet de gommer la composition chimique et d'avoir ainsi accès au relief residuel. On observe sur la figure \ref{fig:si_er_amb} donc des carrés ce qui implique une symétrie Pi/2 et donc un axe d'ordre 4. L'orientation du cristal est donc selon le plan (100) ou (010). En effet, une orientation selon le plan (110), on aurait eu un axe d'ordre 3 et donc des formes hexagonales sur le cliché.
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{images/si_er_amb.png}
+\caption{Observation d'un échantillon de silicium utilisant les électrons rétrodiffusés recueilli par le détecteur semiconducteur en mode $A-B$. L'échantillon est ici grossi 845 fois.}
+\label{fig:si_er_amb}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{images/si_er_apb.png}
+\caption{Observation d'un échantillon de silicium utilisant les électrons rétrodiffusés recueilli par le détecteur semiconducteur en mode $A+B$. L'échantillon est ici grossi 845 fois.}
+\label{fig:si_er_apb}
+\end{figure}
 
 \section*{Conclusion}
 
