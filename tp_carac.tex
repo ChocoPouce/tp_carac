@@ -66,9 +66,36 @@ L'utilisation des électrons secondaires nécessite donc un temps de pose plus l
 
 \subsection{Les techniques de détection associées}
 
-\subsubsection*{Détection des électrons rétrodiffusés}
+\subsubsection*{Détection des électrons rétro-diffusés}
+
+La détection des électrons rétro-diffusés se fait à l'aide d'un (double) détecteur à semi-conducteur 
+(qui n'est généralement rien d'autre qu'une jonction Schottky, cf figure \ref{fig:detect_sc}). 
+
+\begin{figure}
+\centering
+\includegraphics[width = 0.7 \textwidth]{images/detect_sc.png}
+\caption{Détecteur à semi-conducteur pour électrons rétro-diffusés. Dans le cas des expériences présentées ici, il s'agit d'un détecteur annulaire positionné dans l'axe du faisceau primaire. On appelle A et B les deux demi-diodes composant le détecteur.}
+\label{fig:detect_sc}
+\end{figure}
 
 
+Lorsqu'un électron rétro-diffusé vient frapper la surface semi-conductrice du détecteur, 
+et si celui-ci possède une énergie cinétique appropriée,
+il y a alors création d'une paire électron-trou dans le semi-conducteur. 
+Les porteurs de charge sont alors collectés aux contacts de la jonction, d'où la mesure d'un courant et détection de l'électron rétro-diffusé.
+
+Comme le montre la figure \ref{fig:detect_sc}, le détecteur est composé de deux "demi-diodes".
+Un tel découpage permet de mode de fonctionnement.
+En effet, il devient possible de séparer le signal donné par le détecteur en deux voies A et B.
+
+Additionner ou soustraire les signaux A et B permet d'obtenir respectivement un contraste de composition de l'échantillon ou bien topographique, comme indiqué figure \ref{fig:detect_sc_contraste}.
+
+\begin{figure}
+\centering
+\includegraphics[width = 0.9 \textwidth]{images/detect_sc_contraste.png}
+\caption{Contrastes de composition et topographique obtenus en manipulant les voies A et B du détecteur à électrons rétro-diffusés.}
+\label{fig:detect_sc_contraste}
+\end{figure}
 
 
 
