@@ -31,7 +31,7 @@ La microscopie électronique est une des techniques importantes de caractérisat
 
 \subsection{Les différentes sources électroniques du MEB}
 
-Des électrons sont accélérés depuis la cathode vers l'échantillon que l'on souhaite étudier. Du fait de leur énergie cinétique, les électrons pénètrent dans la matière de l'échantillon en formant ce que l'on appelle une poire d'intéraction (figure \ref{fig:poire_int}).
+Des électrons sont accélérés depuis la cathode vers l'échantillon que l'on souhaite étudier. Du fait de leur énergie cinétique, les électrons pénètrent dans la matière de l'échantillon en formant ce que l'on appelle une poire d'interaction (figure \ref{fig:poire_int}).
 
 \begin{figure}
 \centering
@@ -49,10 +49,27 @@ On peut classer les émissions électroniques selon différentes catégories.
 Lorsque les électrons viennent interagir avec l'échantillon, ils sont, pour la plupart, rétro-diffusés de manière élastique.
 Autrement dit, ces électrons interagissent avec les noyaux des atomes de l'échantillon de sorte à conserver leur énergie cinétique.
 Ainsi, ces électrons ont une grande profondeur d'échappée et un grand libre parcours moyen dans l'échantillon.
+
 De fait, ces électrons sont très sensibles à la composition chimique de l'échantillon, plus particulièrement, 
 au numéro atomique Z des atomes constituant l'échantillon.
 Les atomes les plus lourds (Z grand) vont ré-émettre plus d'électrons que les atomes plus légers. L'utilisation des électrons rétro-diffusés permet donc d'avoir un contraste chimique sur l'observation de l'échantillon.
-Même s'ils ont une grande longueur de pénétration, ces électrons permettent une résolution spatiale (contraste topographique) de Xnm (figure \ref{fig:poire_int}).
+Même s'ils ont une grande longueur de pénétration, ces électrons permettent une résolution spatiale (contraste topographique) d'environ $20$nm (figure \ref{fig:poire_int}).
+
+\begin{figure}
+\begin{minipage}[c]{.55\linewidth}
+\centering
+\includegraphics[width = 1 \textwidth]{images/mt_15kv.png}
+\end{minipage}
+\begin{minipage}[c]{.55\linewidth}
+\includegraphics[width = 1 \textwidth]{images/mt_30kv.png}
+\end{minipage}
+\caption{Trajectoires électroniques empruntées dans l'échantillon, calculées par simulations numériques utilisant une méthode de Monte-Carlo. On constate que la quantité d'électrons rétro-diffusés augmente avec l'énergie du faisceau incident (à gauche $15$kV, à droite $30$kV).}
+\label{fig:montecarlo}
+\end{figure}
+
+Comme le montre la figure \ref{fig:montecarlo}, un électron pénétrant dans l'échantillon peut emprunter
+ avec une probabilité non nulle une trajectoire qui
+  ressort de l'échantillon, et ce d'autant plus que son énergie cinétique incidente est grande.
 
 \subsubsection*{Électrons secondaires}
 En autre des électrons diffusés de manière quasi-élastique, une autre partie de ces derniers est diffusée de manière inélastique par l'échantillon.
@@ -73,7 +90,7 @@ La détection des électrons rétro-diffusés se fait à l'aide d'un (double) d�
 
 \begin{figure}
 \centering
-\includegraphics[width = 0.7 \textwidth]{images/detect_sc.png}
+\includegraphics[width = 0.6 \textwidth]{images/detect_sc.png}
 \caption{Détecteur à semi-conducteur pour électrons rétro-diffusés. Dans le cas des expériences présentées ici, il s'agit d'un détecteur annulaire positionné dans l'axe du faisceau primaire. On appelle A et B les deux demi-diodes composant le détecteur.}
 \label{fig:detect_sc}
 \end{figure}
@@ -117,7 +134,8 @@ La détection des électrons rétro-diffusés se fait à l'aide du détecteur d'
 On polarise le collecteur en tension à $+200$ Volts, ce qui a pour rôle d'attirer les électrons secondaires. 
 Cette grille joue aussi le rôle de "cage de Faraday", ce qui permet de ne pas attirer des électrons du faisceau incident. 
 Les électrons secondaires possédant une faible énergie, ils sont ainsi sélectionnés par rapport aux électrons rétro-diffusés.
-Il reste néanmoins les électrons rétro-diffusés avec l'angle solide correspondant à la direction du détecteur d'\ett dont l'on ne peut pas s'affranchir.
+Il reste néanmoins les électrons rétro-diffusés avec l'angle solide correspondant à la direction du détecteur d'\ett dont l'on ne peut pas s'affranchir. 
+Ces électrons sont appelés "électrons rétro-diffusés à incidence rasante".
 
 Une fois les électrons collectés, ils sont accélérés vers un scintillateur polarisé à $10$kV qui les "transforme" en photons.
 Ces photons sont ensuite conduits vers un photo-multiplicateur qui a pour but d'amplifier le signal final obtenu.
@@ -137,13 +155,13 @@ C'est le fait que le grandissement ne dépendent pas des lentilles qui permet d'
 
 
 
-\section{Echantillon éponge de Nickel}
+\section{Échantillon d'une éponge de nickel}
 
 L'observation de ce premier échantillon, une éponge de nickel, va nous permettre d'illustrer l'utilisation des différentes techniques présentées précédemment.
 
 \subsection{Détecteur d'\ett}
 
-Utilisant comme technique d'imagerie intiale les électrons secondaires recueillis par le détecteur d'\ett,
+Utilisant comme technique d'imagerie initiale les électrons secondaires recueillis par le détecteur d'\ett,
 on accède à une première observation de l'échantillon présentée figure \ref{fig:ni_es}. Comme déjà évoqué,
 cette technique a l'avantage d'offrir une grande profondeur de champ à l'image obtenue contrairement aux microscopies optiques. Cette première technique d'imagerie permet un contraste de profondeur de champ et donc de visualiser spatialement la forme de l'échantillon.
 
@@ -183,10 +201,10 @@ la présence d'impuretés sur le matériau, tout du moins de parties faites d'é
 \begin{figure}
 \begin{minipage}[c]{.55\linewidth}
 \centering
-\includegraphics[width = 0.7 \textwidth]{images/ni_er_apb.png}
+\includegraphics[width = 1 \textwidth]{images/ni_er_apb.png}
 \end{minipage}
 \begin{minipage}[c]{.55\linewidth}
-\includegraphics[width = 0.7 \textwidth]{images/ni_er_amb.png}
+\includegraphics[width = 1 \textwidth]{images/ni_er_amb.png}
 \end{minipage}
 \caption{Observation de l'éponge de nickel utilisant les électrons rétro-diffusés recueillis par le détecteur à semi-conducteur en mode $A+B$ et $A-B$. L'échantillon est ici grossi 200 fois.}
 \label{fig:ni_er_apb_amb}
@@ -201,11 +219,9 @@ le contraste est topographique.
 
  
 
-\section{Echantillon de silicium}
+\section{Échantillon de silicium}
 
 L'étude, avec les techniques d'imagerie du microscope électronique à balayage, d'un échantillon de silicium permet d'obtenir un grand nombre d'informations.
-
-\subsection{Structure cristallographique de l'échantillon}
 
 On réalise une image de l'échantillon de silicium en collectant les électrons secondaires avec le détecteur d'\ett.
 Le cliché obtenu est présenté sur la figure \ref{fig:si_es}. On garde à l'esprit qu'il présente un contraste topographique.
@@ -231,36 +247,36 @@ Les faces éclairées sont celles situées en bas, ce qui veut dire que les pyra
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{images/si_er_rasant.png}
-\caption{Observation d'un échantillon de silicium utilisant les électrons rétrodiffusés collectés dans le détecteur d'\ett. L'échantillon est ici grossi 845 fois.}
+\caption{Observation d'un échantillon de silicium utilisant les électrons rétro-diffusés collectés dans le détecteur d'\ett. L'échantillon est ici grossi 845 fois.}
 \label{fig:si_er_rasant}
 \end{figure}
 
-En utilisant le détecteur à semiconducteur en mode $A+B$, on observe sur la figure \ref{fig:si_er_apb_amb} les contrastes de compositions et en l'occurence qu'il y a deux types de poussières. Mais le plus important pour la détermination de la structure cristallographique est le mode $A-B$. En effet, cela permet de gommer la composition chimique et d'avoir ainsi accès au relief residuel. On observe sur la figure \ref{fig:si_er_apb_amb} donc des carrés ce qui implique une symétrie Pi/2 et donc un axe d'ordre 4. L'orientation du cristal est donc selon le plan (100) ou (010). En effet, une orientation selon le plan (110), on aurait eu un axe d'ordre 3 et donc des formes hexagonales sur le cliché.
+En utilisant le détecteur à semi-conducteur en mode $A+B$, on observe sur la figure \ref{fig:si_er_apb_amb} les contrastes de compositions et en l'occurrence qu'il y a deux types de poussières. Mais le plus important pour la détermination de la structure cristallographique est le mode $A-B$. En effet, cela permet de gommer la composition chimique et d'avoir ainsi accès au relief résiduel. On observe sur la figure \ref{fig:si_er_apb_amb} donc des carrés ce qui implique une symétrie Pi/2 et donc un axe d'ordre 4. L'orientation du cristal est donc selon le plan (100) ou (010). En effet, une orientation selon le plan (110), on aurait eu un axe d'ordre 3 et donc des formes hexagonales sur le cliché.
 \begin{figure}
 \begin{minipage}[c]{.55\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{images/si_er_apb.png}
+\includegraphics[width=1\textwidth]{images/si_er_apb.png}
  \end{minipage}\hfill
 \begin{minipage}[c]{.55\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{images/si_er_amb.png}
+\includegraphics[width=1\textwidth]{images/si_er_amb.png}
 \end{minipage}
-\caption{Observation d'un échantillon de silicium utilisant les électrons rétrodiffusés recueilli par le détecteur semiconducteur en mode $A+B$ et $A-B$. L'échantillon est ici grossi 845 fois.}
+\caption{Observation d'un échantillon de silicium utilisant les électrons rétro-diffusés recueilli par le détecteur semi-conducteur en mode $A+B$ et $A-B$. L'échantillon est ici grossi 845 fois.}
 \label{fig:si_er_apb_amb}
 \end{figure}
 
-\section{Echantillon d'aluminium}
-Cette échantillon est la résultante d'un morceau d'aluminium brisé, on peut voir à l'oeil une rugosité importante. Quelles sont les informations que pourra nous donner une étude au microscope MEB.
+\section{Échantillon d'aluminium}
+Cet échantillon est la résultante d'un morceau d'aluminium brisé, on peut voir à l'œil une rugosité importante. Quelles sont les informations que pourra nous donner une étude au microscope MEB.
 
-Avec les électrons secondaire, on voit sur l'échantillon deux types de reliefs. Des déchirures à certains endroit, avec des facettes acérées et des gouffres remplis de boules comme on peut le voir dans la figure \ref{fig:alu_reliefs}. Les deux types de ruptures dans ce même échantillon peuvent être expliqués à l'aide d'un diagramme de phase (figure \ref{fig:diagphase}).
+Avec les électrons secondaires, on voit sur l'échantillon deux types de reliefs. Des déchirures à certains endroit, avec des facettes acérées et des gouffres remplis de boules comme on peut le voir dans la figure \ref{fig:alu_reliefs}. Les deux types de ruptures dans ce même échantillon peuvent être expliqués à l'aide d'un diagramme de phase (figure \ref{fig:diagphase}).
 \begin{figure}
 \begin{minipage}[c]{.55\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{images/alu_arretes.png}
+\includegraphics[width=1\textwidth]{images/alu_arretes.png}
  \end{minipage}\hfill
 \begin{minipage}[c]{.55\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{images/alu_brise.png}
+\includegraphics[width=1\textwidth]{images/alu_brise.png}
 \end{minipage}
 \caption{Observation de l'échantillon d'aluminium en utilisant les électrons secondaires}
 \label{fig:alu_reliefs}
@@ -273,9 +289,69 @@ Avec les électrons secondaire, on voit sur l'échantillon deux types de reliefs
 \label{fig:diagphase}
 \end{figure}
 
+\section{Échantillon d'aluminium poli}
+
+Cet échantillon possède une composition identique à l'alliage étudié dans la section précédente (à savoir, un alliage d'aluminium et de silicium). 
+Il a été refroidi à haute pression puis poli.
+Des fibres (métalliques) ont été introduites dans l'alliage avant la solidification afin de le rendre plus solide.
+
+\subsection{Détecteur d'\ett}
+
+Étudions, tout d'abord, l'échantillon à l'aide des électrons recueillis par le détecteur d'\ett. 
+La figure \ref{fig:alu_poli_es} montre le cliché obtenu avec les électrons secondaires.
+On peut distinguer le contour des fibres introduites dans l'alliage, mais le contraste de l'image laisse 
+à désirer.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{images/alu_es.png}
+\caption{Observation de l'échantillon d'alliage d'aluminium avec fibres en utilisant les électrons secondaires.}
+\label{fig:alu_poli_es}
+\end{figure}
+
+De meilleurs résultats sont obtenus en utilisant les électrons rétro-diffusés à incidence rasante, indiqué figure \ref{fig:alu_poli_er_rasant}.
+Ce cliché indique que les fibres sont en relief par rapport à la coupe, ce qui sous entend que ces fibres plus dures que l'alliage.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{images/alu_er_rasant.png}
+\caption{Observation de l'échantillon d'alliage d'aluminium avec fibres en utilisant les électrons rétro-diffusés à incidence rasante.}
+\label{fig:alu_poli_er_rasant}
+\end{figure}
+
+\subsection{Détecteur à semi-conducteur}
+
+On utilise maintenant le détecteur à semi-conducteur.
+Le mode $A-B$ permet de réaliser un cliché avec un bon contraste topographique (cf figure\ref{fig:alu_poli_a-b}), et confirme bien que les fibres sont en relief par rapport au plan de coupe de l'échantillon.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{images/alu_er_amb.png}
+\caption{Observation de l'échantillon d'alliage d'aluminium avec fibres en utilisant les électrons rétro-diffusés en mode $A-B$ (contraste topographique).}
+\label{fig:alu_poli_a-b}
+\end{figure}
+
+Le mode $A+B$ permet d'obtenir un cliché de l'échantillon avec un contraste chimique, comme indiqué sur la figure \ref{fig:alu_poli_a+b}.
+Au niveau de l'alliage, on distingue bien deux espèces chimiques différentes, à savoir l'aluminium et le silicium ($Z_{Al}<Z_{Si}$ donc le Si apparaît plus clair que l'Al).
+Les fibres apparaissant plus sombres, on en déduit que l'élément que les compose est plus léger, au sens où $Z_{fibre}<Z_{Al}<Z_{Si}$.
+Enfin, on peut distinguer sur ces clichés les sillons réalisées par des grains abrasifs lors du polissage de la surface.
+
+\begin{figure}
+\begin{minipage}[c]{.55\linewidth}
+\centering
+\includegraphics[width=1\textwidth]{images/alu_er_apb.png}
+ \end{minipage}\hfill
+\begin{minipage}[c]{.55\linewidth}
+\centering
+\includegraphics[width=1\textwidth]{images/alu_er_apb_g.png}
+\end{minipage}
+\caption{Observation de l'échantillon d'alliage d'aluminium avec fibres en utilisant les électrons rétro-diffusés en mode $A+B$ (contraste chimique) pour différentes résolutions.}
+\label{fig:alu_poli_a+b}
+\end{figure}
+
 \section*{Conclusion}
 
-On a pu voir lors de ce TP, la large gamme de possibilité offerte par la microscopie MEB. En effet, en tirant partis des différents phénomènes physiques, on peut avoir des informations sur la composition chimique, la répartition des composés dans l'espace, l'état de surface, les plans cristallographiques, le relief de l'échantillon. Ses avantages par rapport à la microscopie optique sont aussi non négligeable, la résolution et la profondeur de champs sont par exemple bien meilleure. Et bien que les échantillons observés doivent être conducteur, on arrive tout de même, par des techniques de déposition à permettre l'obserbation d'échantillons organiques.
+On a pu voir lors de ce TP, la large gamme de possibilité offerte par la microscopie MEB. En effet, en tirant partis des différents phénomènes physiques, on peut avoir des informations sur la composition chimique, la répartition des composés dans l'espace, l'état de surface, les plans cristallographiques, le relief de l'échantillon. Ses avantages par rapport à la microscopie optique sont aussi non négligeable, la résolution et la profondeur de champs sont par exemple bien meilleure. Et bien que les échantillons observés doivent être conducteur, on arrive tout de même, par des techniques de déposition à permettre l'observation d'échantillons organiques.
 
 
 
